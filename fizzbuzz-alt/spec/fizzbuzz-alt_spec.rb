@@ -9,4 +9,8 @@ describe 'fizzbuzz' do
     expect(25.fizzbuzz).to eq('buzz')
   end
   
+  it 'returns "fizzbuzz" for multiple of 15' do
+    expect(30.fizzbuzz).to eq('fizzbuzz')
+  end
+  
 end
