@@ -13,4 +13,7 @@ describe 'fizzbuzz' do
     expect(30.fizzbuzz).to eq('fizzbuzz')
   end
   
+  it 'returns the number for any other number' do
+    expect(1.fizzbuzz).to eq(1)
+  end
 end
