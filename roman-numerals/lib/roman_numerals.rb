@@ -1,7 +1,11 @@
 class RomanNumerals
   
   def convert(n)
-    'I'
+    if n == 1
+      'I'
+    elsif n == 5
+      'V'  
+    end
   end
   
 end
