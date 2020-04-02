@@ -18,4 +18,8 @@ describe 'RomanNumerals' do
     expect(@numeral.convert(10)).to eq('X')
   end
   
+  it 'converts 25 to XXV' do
+    expect(@numeral.convert(25)).to eq('XXV')
+  end
+  
 end

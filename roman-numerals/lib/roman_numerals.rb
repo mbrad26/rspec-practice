@@ -1,9 +1,13 @@
 class RomanNumerals
   
-  LOOKUP_TABLE = {1 => 'I', 5 => 'V', 10 => 'X'}
+  LOOKUP_TABLE = {10 => 'X', 5 => 'V', 1 => 'I'}
   
   def convert(n)
-    LOOKUP_TABLE[n]
+    roman_n = ''
+    LOOKUP_TABLE.each do |k, v|
+      (n / k).times {roman_n << v; n -= k}
+    end
+    roman_n
   end
   
 end
