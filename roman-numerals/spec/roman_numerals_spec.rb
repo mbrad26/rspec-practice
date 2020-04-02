@@ -22,4 +22,8 @@ describe 'RomanNumerals' do
     expect(@numeral.convert(25)).to eq('XXV')
   end
   
+  it 'converts 958 to CMLVIII' do
+    expect(@numeral.convert(958)).to eq('CMLVIII')
+  end
+  
 end
