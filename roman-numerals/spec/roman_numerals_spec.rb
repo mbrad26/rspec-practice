@@ -14,4 +14,8 @@ describe 'RomanNumerals' do
     expect(@numeral.convert(5)).to eq('V')
   end
   
+  it 'converts 10 to X' do
+    expect(@numeral.convert(10)).to eq('X')
+  end
+  
 end
