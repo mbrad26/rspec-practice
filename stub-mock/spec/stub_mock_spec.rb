@@ -1,4 +1,4 @@
-require 'stub_mock.rb'
+require 'spec_helper'
 
 # Stub
 # Returns canned responses, avoiding any meaningful computation or I/O:
@@ -12,5 +12,15 @@ require 'stub_mock.rb'
 
 
 describe DataProcessor do
+  
+  let(:processor) { described_class.new }
+  
+  it 'adds processed to valid data' do
+    validator = double(:validator) # one line double(:validator, valid?: true)
+    
+    allow(validator).to receive(:valid?).and_return(true)
+    
+    expect(processor.process('foo', validator)).to eq('foo processed')
+  end
   
 end
