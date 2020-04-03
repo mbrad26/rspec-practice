@@ -18,7 +18,7 @@ describe DataProcessor do
   context 'with valid data' do
     it 'adds processed to valid data' do
       validator = double(:validator) 
-      # stub method
+      # stub method - allow to receive a method
       allow(validator).to receive(:valid?).and_return(true) 
       
       expect(processor.process('foo', validator)).to eq('foo processed')
@@ -36,7 +36,7 @@ describe DataProcessor do
   # to make sure the obj receives any message use mocks
   it 'calls validator.valid?' do
     validator = double(:validator)
-    # mock
+    # mock - expect to receive valid? 
     expect(validator).to receive(:valid?).with('foo').and_return(true)
     processor.process('foo', validator)
   end
