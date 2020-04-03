@@ -5,7 +5,7 @@ class Detective
   end
   
   def investigate
-    'Nothing to investigate!'
+    'It went "oi!"'
   end
   
 end
