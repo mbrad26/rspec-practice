@@ -1,0 +1,21 @@
+---
+- !ruby/object:Book
+  title: HG ahchahc
+  author: GFhajc
+  category: :development
+- !ruby/object:Book
+  title: JGLhsaa ahac
+  author: KJHhlas
+  category: :design
+- !ruby/object:Book
+  title: AKJsjkjs dsc
+  author: Ajsda d
+  category: :usability
+- !ruby/object:Book
+  title: HGAD ahchahc
+  author: GFhadaadajc
+  category: :development
+- !ruby/object:Book
+  title: JGLDDD DFhsaa ahac
+  author: KJHAFAhlas
+  category: :design
