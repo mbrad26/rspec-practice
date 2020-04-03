@@ -6,8 +6,10 @@ describe Detective do
     
     it 'returns what it is investigating' do
       
-      thinghie = double(:thinghie, prod: 'oi!')
+      thinghie = double(:thinghie)
       subject = Detective.new(thinghie)
+      
+      allow(thinghie).to receive(:prod).and_return('oi!')
     
       expect(subject.investigate).to eq 'It went "oi!"'
     end
