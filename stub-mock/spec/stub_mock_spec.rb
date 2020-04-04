@@ -1,5 +1,7 @@
 require 'spec_helper'
 
+# http://rubyblog.pro/2017/10/rspec-difference-between-mocks-and-stubs
+#
 # Stub
 # Returns canned responses, avoiding any meaningful computation or I/O:
 #
