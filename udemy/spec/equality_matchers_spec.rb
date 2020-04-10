@@ -20,4 +20,21 @@ RSpec.describe 'equality matchers' do
       expect(b).to eql 3
     end
   end
+  
+  describe 'equal and be matcher' do
+    let(:c) { [1, 2, 3] }
+    let(:d) { [1, 2, 3] }
+    let(:e) { c }
+    
+    it 'compers object identity' do
+      expect(c).to eq d
+      expect(c).to eql d
+      
+      expect(c).not_to equal d
+      expect(c).to be e
+      
+      expect(c).not_to equal d
+      expect(c).not_to equal [1, 2, 3]
+    end
+  end
 end
