@@ -14,5 +14,4 @@ RSpec.describe 'predicate matchers and methods' do
   describe 0 do
     it { is_expected.to be_zero  }
   end
-  
 end
