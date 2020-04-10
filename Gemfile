@@ -8,7 +8,7 @@ end
 group :development do
   gem 'guard'
   gem 'guard-rspec'
-  gem 'pry'
+  gem 'pry', git: 'https://github.com/pry/pry', ref: '69f7d9d185726abc4a84b3731f1735f501a81266'
 
   # Adds debugging steps to Pry
   # continue, step, next

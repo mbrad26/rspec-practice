@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/pry/pry.git
+  revision: 69f7d9d185726abc4a84b3731f1735f501a81266
+  ref: 69f7d9d185726abc4a84b3731f1735f501a81266
+  specs:
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,9 +37,6 @@ GEM
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    pry (0.12.2)
-      coderay (~> 1.1.0)
-      method_source (~> 0.9.0)
     pry-nav (0.3.0)
       pry (>= 0.9.10, < 0.13.0)
     pry-remote (0.1.8)
@@ -63,7 +69,7 @@ PLATFORMS
 DEPENDENCIES
   guard
   guard-rspec
-  pry
+  pry!
   pry-nav
   pry-remote
   rake
