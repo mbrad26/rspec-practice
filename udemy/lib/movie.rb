@@ -33,6 +33,7 @@ class Movie
             puts actor.act
             puts actor.fall_of_ladder
             puts actor.light_on_fire
+            puts actor.act
         end
     end
 end
